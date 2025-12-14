@@ -16,4 +16,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: app 
-              run: echo "wwwwwwwwwwwwwwww"
+              run: echo "wwwwwwwwwwwwwwww to ${{ inputs.environment }}"
