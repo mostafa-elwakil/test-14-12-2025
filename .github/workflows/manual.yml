@@ -1,19 +1,22 @@
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: "Choose environment"
-        required: true
-        default: "staging"
-        type: choice
-        options:
-          - staging
-          - products 
+  repository_dispatch:
+    type: [incident_report]
+    
+    # inputs:
+    #   environment:
+    #     description: "Choose environment"
+    #     required: true
+    #     default: "staging"
+    #     type: choice
+    #     options:
+    #       - staging
+    #       - products 
 
 
 jobs:
-    deploy:
+    handel-incident:
         runs-on: ubuntu-latest
         steps:
-            - name: app 
-              run: echo "wwwwwwwwwwwwwwww to ${{ inputs.environment }}"
+            - name: print incident report 
+              run: echo "incident report"
+ # ${{ inputs.environment }}
