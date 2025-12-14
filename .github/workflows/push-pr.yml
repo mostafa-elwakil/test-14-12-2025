@@ -1,0 +1,25 @@
+on:
+    push:
+        branches:
+            - main
+            - "release/**"
+        paths:
+            - "src/**"
+    pull_request:
+        branches:
+            - main
+            - "release/**"
+        paths:
+            - "src/**"
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4.2.2
+
+            - name: eu test
+              run: echo "This is the push-pr workflow running!"
