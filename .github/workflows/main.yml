@@ -1,0 +1,15 @@
+name: first woekflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example-jope:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print a wwwww
+        run: echo "wwwwwwwwwwwwwwww"
+        
