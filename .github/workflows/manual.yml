@@ -5,7 +5,7 @@ on:
         description: "Choose environment"
         required: true
         default: "staging"
-        type: 
+        type: choice
         options:
           - staging
           - products 
